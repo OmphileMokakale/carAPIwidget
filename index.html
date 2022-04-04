@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script type="text/x-template" class="resultsTemp">  
+        <ul>
+            {{#each results}}
+            <li>{{this.make}} {{this.color}} {{this.model}}</li> 
+            {{/each}}
+        </ul>
+    </script>
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="make">
+                    <option value="">Make</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Volkswagen">Volkswagen</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Ford">Ford</option>
+                </select>
+            
+            </div>
+            <div class="col">
+                <label for="cars">Choose a color:</label>
+                <select name="cars" id="color">
+                    <option value="">Color</option>
+                  <option value="Red">Red</option>
+                  <option value="Blue">Blue</option>
+                  <option value="White">White</option>
+                  <option value="Orange">Orange</option>
+                </select>
+            </div>
+          </div>
+    
+    
+          
+    
+        <div class="cars">
+    
+        </div>
+    
+    
+        <div id="container"></div>
+        <br>
+        <div>
+        <button id="generate">Generate</button>
+        </div>
+    
+        <div class="results">
+    
+        </div>
+
+    </div>
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+<script src="index.js"></script>
+
+</html>

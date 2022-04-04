@@ -1,0 +1,10 @@
+body {
+    font-family: Arial;
+    background: rgb(170, 202, 206);
+
+    padding-bottom: 1em;
+    /* border : 1px solid; */
+    width : 50em;
+    padding : 0.5em;
+    margin : 0.5em;
+}
