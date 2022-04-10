@@ -13,7 +13,7 @@
     <script type="text/x-template" class="resultsTemp">  
         <ul>
             {{#each results}}
-            <li>{{this.make}} {{this.color}} {{this.model}}</li> 
+            <li>{{this.make}} {{this.color}} {{this.model}} {{this.reg_number}}  R{{this.price}}</li>  
             {{/each}}
         </ul>
     </script>
@@ -45,7 +45,33 @@
                   <option value="Orange">Orange</option>
                 </select>
             </div>
+
+            <div class="col">
+                <label for="cars">Reg_Number:</label>
+                <select name="cars" id="RegNum">
+                    <option value="">RegNum</option>
+                  <option value="CF 73917">CF 73917</option>
+                  <option value="CJ">CJ</option>
+                  <option value="CY">CY</option>
+                  <option value="CL">CL</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="cars">Choose Price:</label>
+                <select name="cars" id="price">
+                    <option value="">Price</option>
+                  <option value="66564">66564</option>
+                  <option value="R70 000 - R89 000">R70 000 - R89 000</option>
+                  <option value="R90 000 - R159 000">R90 000 - R159 000</option>
+                  <option value="R160 000 - R200 000">R160 000 - R200 000</option>
+                </select>
+            </div>
+
           </div>
+          </div>
+     
+  </div>
     
     
           
